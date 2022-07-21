@@ -24,7 +24,7 @@ function App() {
       <input
         type='checkbox'
         onChange={(e) => {
-          setDisabled(e.target.value);
+          setDisabled(e.target.checked);
         }}
       />
     </div>
