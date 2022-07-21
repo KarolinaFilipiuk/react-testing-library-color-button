@@ -23,6 +23,9 @@ function App() {
       </button>
       <input
         type='checkbox'
+        id='enable-button-checkbox'
+        defaultChecked={disabled}
+        aria-checked={disabled}
         onChange={(e) => {
           setDisabled(e.target.checked);
         }}
