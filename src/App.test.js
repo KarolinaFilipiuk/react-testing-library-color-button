@@ -36,4 +36,9 @@ test('button is disabled when checkbox is clicked', () => {
 
   expect(colorButton).toBeDisabled();
   expect(checkbox).toBeChecked();
+
+  fireEvent.click(checkbox);
+
+  expect(colorButton).toBeEnabled();
+  expect(checkbox).not.toBeChecked();
 });
