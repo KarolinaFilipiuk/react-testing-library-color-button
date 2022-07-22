@@ -19,6 +19,7 @@ test('button has correct initial color', () => {
 
   fireEvent.click(colorButton);
   expect(colorButton).toHaveStyle({ backgroundColor: SECOND_COLOR });
+
   expect(colorButton).toHaveTextContent(`Change to ${FIRST_COLOR_WITH_SPACES}`);
 });
 
